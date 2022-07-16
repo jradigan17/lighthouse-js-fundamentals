@@ -13,7 +13,7 @@ if(temperature < 0) {
   console.log("Short sleeves won't cut it!");
 }
 
-console.log("Now you're ready to go outside!");
+console.log("Now you're ready to go outside!\nDon't forget to take Guinness!");
 
 
 //Next Exercise
