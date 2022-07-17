@@ -1,3 +1,4 @@
+//Conditional examples "raining"
 const raining = true;
 const temperature = 12;
 
@@ -23,3 +24,21 @@ const age = 26
 if(isCitizen && age > 18) {
   console.log("You are eligible to vote.");
 }
+
+//Nested For Loops
+for (var x = 0; x < 5; x = x + 1) {
+  for (var y = 0; y < 3; y = y + 1) {
+    console.log(x + "," + y);
+  }
+}
+
+//Laughing "haha" example
+let z = "";
+ 
+function laugh(num){
+    for(let x = 1; x <= num; x++){
+        z += "ha";
+    }
+    return z + "!"
+}
+console.log(laugh(7));
