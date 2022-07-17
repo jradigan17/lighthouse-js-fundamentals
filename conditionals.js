@@ -14,7 +14,7 @@ if(temperature < 0) {
   console.log("Short sleeves won't cut it!");
 }
 
-console.log("Now you're ready to go outside!");
+console.log("Now you're ready to go outside!\nDon't forget to take Guinness!");
 
 
 //Next Exercise
@@ -24,6 +24,7 @@ const age = 26
 if(isCitizen && age > 18) {
   console.log("You are eligible to vote.");
 }
+<<<<<<< HEAD
 
 //Nested For Loops
 for (var x = 0; x < 5; x = x + 1) {
@@ -42,3 +43,5 @@ function laugh(num){
     return z + "!"
 }
 console.log(laugh(7));
+=======
+>>>>>>> 613a0ceff71821d47c48e363c54aa2f1c1d76c24
