@@ -4,7 +4,7 @@ const range = function(start, end, step){
     return numbers;
   }
 
-  for(i = start; i <= end; i += step){
+  for(let i = start; i <= end; i += step){
     numbers.push(i);
   }
   return numbers;
