@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Simple Document API example</title>
+  <script>
+    function setBodyAttr(attr, value) {
+      if (document.body) document.body[attr] = value;
+      else throw new Error("no support");
+    }
+  </script>
+</head>
+<body>
+  <div>
+    <form>
+      <p><label for="text">Text color</label></p>
+      <select onChange="setBodyAttr('text',
+        this.options[this.selectedIndex].value);" id="text">
+        <option value="black">black</option>
+        <option value="red">red</option>
+      </select>
+      <p><label for="bgcolor">Background color</label></p>
+      <select onChange="setBodyAttr('bgColor',
+        this.options[this.selectedIndex].value);" id="bgcolor">
+        <option value="white">white</option>
+        <option value="lightgrey">gray</option>
+      </select>
+      <p><label for="linkcolor">Link Color</label></b></p>
+      <select onChange="setBodyAttr('link',
+        this.options[this.selectedIndex].value);" id="linkcolor">
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+      </select>
+      <small>
+        <a href="http://some.website.tld/page.html" id="sample">
+          (sample link)
+        </a>
+      </small>
+    </form>
+  </div>
+</body>
+</html>
