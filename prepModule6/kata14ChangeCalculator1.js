@@ -13,12 +13,13 @@ const calculateChange = function(total, cash) {
     {denomination : "nickel", value : 5},
     {denomination : "penny", value : 1}
   ];
-  for(let item of typeChange){
-    if(changeDue / item.value >= 1) {
+  for(let i = 0; i < typeChange.length; i++){
+    let tmp = typeChange[i];
+    if(changeDue / tmp.value >= 1) {
       let changeAdd = {};
-      changeAdd[item.denomination] = Math.floor(changeDue / item.value);
+      changeAdd[tmp.denomination] = Math.floor(changeDue / tmp.value);
       changeProvide = Object.assign(changeProvide, changeAdd);
-      changeDue = changeDue % item.value; 
+      changeDue = changeDue % tmp.value; 
     };
   };
   return changeProvide;
